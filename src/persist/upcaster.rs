@@ -1,3 +1,5 @@
+#![allow(clippy::to_string_in_format_args)]
+
 use serde_json::Value;
 use std::fmt::{Display, Formatter};
 use std::num::ParseIntError;
