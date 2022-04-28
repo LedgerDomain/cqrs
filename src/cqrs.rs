@@ -25,7 +25,8 @@ where
     A: Aggregate,
     ES: EventStore<A>,
 {
-    store: ES,
+    /// The EventStore backing the CqrsFramework
+    pub store: ES,
     query_processors: Vec<Box<dyn Query<A>>>,
 }
 
